@@ -1,0 +1,90 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-26T07:16:25.476Z",
+        "line": 3,
+        "name": "Verify IMBD home page details with individual movie page details",
+        "description": "",
+        "id": "home-assignment;verify-imbd-home-page-details-with-individual-movie-page-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4344999500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open Chrome Browser",
+            "match": {
+              "location": "stepDefinitions.TestIMBD.open_Chrome_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11208851300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Enter URL \"https://www.imdb.com/chart/top/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.imdb.com/chart/top/",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.TestIMBD.enter_URL(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22936400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify the site is opened successfully with title \"IMDb Top 250 - IMDb\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "IMDb Top 250 - IMDb",
+                  "offset": 51
+                }
+              ],
+              "location": "stepDefinitions.TestIMBD.verifyIMBDsite(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The following asserts failed:\n\tRating is not matched. expected [93] but found [92],\n\tRating is not matched. expected [92] but found [91],\n\tRating is not matched. expected [89] but found [88],\n\tRating is not matched. expected [88] but found [87],\n\tRating is not matched. expected [87] but found [86],\n\tRating is not matched. expected [87] but found [86],\n\tRating is not matched. expected [87] but found [86],\n\tRating is not matched. expected [86] but found [85],\n\tRating is not matched. expected [86] but found [85],\n\tRating is not matched. expected [86] but found [85],\n\tRating is not matched. expected [86] but found [85],\n\tRating is not matched. expected [86] but found [85],\n\tRating is not matched. expected [88] but found [85],\n\tRating is not matched. expected [87] but found [85],\n\tRating is not matched. expected [85] but found [84]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)\r\n\tat stepDefinitions.TestIMBD.fetchdata(TestIMBD.java:119)\r\n\tat ✽.Fetch name, ratings, and movie release year of top 50 movies from IMDB site and verify that each and every movie link page is opened and all mentioned data is correct.(file:///G:/Demo/./src/Features/Test.feature:7)\r\n",
+              "duration": 407295997700,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Fetch name, ratings, and movie release year of top 50 movies from IMDB site and verify that each and every movie link page is opened and all mentioned data is correct.",
+            "match": {
+              "location": "stepDefinitions.TestIMBD.fetchdata()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Home Assignment",
+    "description": "",
+    "id": "home-assignment",
+    "keyword": "Feature",
+    "uri": "file:src/Features/Test.feature",
+    "tags": []
+  }
+]
